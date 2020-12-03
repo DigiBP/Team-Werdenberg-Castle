@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/2.0" id="checkDrawing" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.2.0">
+  <decision id="checkDrawingObjectsID" name="Check Drawing &#38; Objects">
+    <decisionTable id="DecisionTable_18iy29m" hitPolicy="FIRST">
+      <input id="Input_1" label="Main Machines">
+        <inputExpression id="InputExpression_1" typeRef="boolean">
+          <text>mainMachines2</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0yw77ay" label="Secondary Machines">
+        <inputExpression id="LiteralExpression_0jmia82" typeRef="boolean">
+          <text>secondaryMachines2</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0f2wrlt" label="Equipment" biodi:width="192">
+        <inputExpression id="LiteralExpression_17wuuyh" typeRef="boolean">
+          <text>equipment2</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0ohpxts" label="Instrumentation Devices">
+        <inputExpression id="LiteralExpression_145y4gf" typeRef="boolean">
+          <text>instrumentationDevices2</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1ltyfju" label="Piping Systen">
+        <inputExpression id="LiteralExpression_1v6fsu1" typeRef="boolean">
+          <text>pipingSystem2</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_065urfx" label="Object Consistency">
+        <inputExpression id="LiteralExpression_0t8s367" typeRef="boolean">
+          <text>objectConsistency2</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0gr6hwr" label="No Missing Objects">
+        <inputExpression id="LiteralExpression_0udf9mn" typeRef="boolean">
+          <text>noMissingObjects2</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="sumOfApproval2" name="sumOfApproval2" typeRef="boolean" />
+      <output id="OutputClause_0g7em2l" label="Explanation" name="explanation2" typeRef="string" />
+      <rule id="DecisionRule_1742rer">
+        <description>Something is not approved</description>
+        <inputEntry id="UnaryTests_17h1i9l">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1spkfix">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_129vb5h">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_06erauj">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1c8yv56">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01uri7b">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1yetzxq">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_181w9ml">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0hx2t97">
+          <text>"Something is not approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1xhnrjt">
+        <description>Something is not approved</description>
+        <inputEntry id="UnaryTests_1snzqcy">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0i45v2x">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_04jtsmt">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03mw7rb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0vgbz0n">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0eutdnw">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1n0xvuw">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1jvwasr">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1dhjahj">
+          <text>"Something is not approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0dhfxzv">
+        <description>Something is not approved</description>
+        <inputEntry id="UnaryTests_0cghl3j">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_14owewl">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0cm04d2">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vuwjw5">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1rgonwz">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02j71cu">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0kpgz8y">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1iwvlyt">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0guy585">
+          <text>"Something is not approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0p8hl6t">
+        <description>Something is not approved</description>
+        <inputEntry id="UnaryTests_05z38c2">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1i301fb">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1y6dfo7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0y7l9mz">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fvrbim">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_00v283u">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_11esy9p">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0sje0lp">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1e0ckew">
+          <text>"Something is not approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0bo1p9t">
+        <description>Something is not approved</description>
+        <inputEntry id="UnaryTests_0tpyw3c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0u2fsby">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0epogmz">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1k3pf5c">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03mpj3c">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1jtrhtu">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1s1fv80">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0hzigoy">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0xl7ysx">
+          <text>"Something is not approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11nz5g3">
+        <description>Something is not approved</description>
+        <inputEntry id="UnaryTests_057oeey">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0psrbxa">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1bsuhnj">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_031slvs">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0479juf">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_19vesse">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1srhuhl">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_00pm084">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_0svdq7d">
+          <text>"Something is not approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_179pfos">
+        <description>Something is not approved</description>
+        <inputEntry id="UnaryTests_0ivhgn6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_074k2db">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1h4sm0s">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1bm06oo">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18az65p">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0einomx">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1irsaxr">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1kroh1s">
+          <text>false</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1rmns5e">
+          <text>"Something is not approved"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1actpmt">
+        <description>Everything is approved</description>
+        <inputEntry id="UnaryTests_1weurzf">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vq5hue">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0iup0y6">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1llv8a4">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0keunn4">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0w88qw8">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ekwwew">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_14bcxns">
+          <text>true</text>
+        </outputEntry>
+        <outputEntry id="LiteralExpression_1ju592z">
+          <text>"Everything is approved"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="checkDrawingObjectsID">
+        <dc:Bounds height="80" width="180" x="160" y="70" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

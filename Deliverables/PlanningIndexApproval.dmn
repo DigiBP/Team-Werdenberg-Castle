@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_19tugld" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.2.0">
+  <decision id="Decision_0wa7ae2" name="Planning Index Approval">
+    <decisionTable id="DecisionTable_16o4nzk" hitPolicy="FIRST">
+      <input id="Input_1">
+        <inputExpression id="InputExpression_1" typeRef="boolean" expressionLanguage="feel">
+          <text>PIapproval1</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1gqpd5f">
+        <inputExpression id="LiteralExpression_0bc5aqi" typeRef="boolean">
+          <text>PIapproval2</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="PIapproval" typeRef="boolean" />
+      <rule id="DecisionRule_0cq2hua">
+        <description>not all approvals given</description>
+        <inputEntry id="UnaryTests_196gwol">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_03ps5kj">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1v5ayl5">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0tziro2">
+        <description>not all approvals given</description>
+        <inputEntry id="UnaryTests_1axw67r">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0g1txdg">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1rrhpsd">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1hxe3mh">
+        <description>all approvals given</description>
+        <inputEntry id="UnaryTests_004bnk5">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1i6w1o3">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1cstose">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_0wa7ae2">
+        <dc:Bounds height="80" width="180" x="160" y="80" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

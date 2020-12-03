@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="Definitions_14eswds" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="4.2.0">
+  <decision id="Decision_01d9fue" name="Full Index Approval">
+    <decisionTable id="DecisionTable_0zzt0re" hitPolicy="FIRST">
+      <input id="Input_1">
+        <inputExpression id="InputExpression_1" typeRef="boolean">
+          <text>FIapproval1</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1v2i3f4">
+        <inputExpression id="LiteralExpression_1w1dapb" typeRef="boolean">
+          <text>FIapproval2</text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_02zi0bj" label="FIapproval3">
+        <inputExpression id="LiteralExpression_1nds8nx" typeRef="boolean">
+          <text>FIapproval3</text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" name="FIapproval" typeRef="boolean" />
+      <rule id="DecisionRule_04zi0q3">
+        <description>not all approvals given</description>
+        <inputEntry id="UnaryTests_0e5wmv3">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1torx5w">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0p2ibp8">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0kqxxpl">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1mxyid3">
+        <description>not all approvals given</description>
+        <inputEntry id="UnaryTests_1cxxkpn">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0rad3jc">
+          <text>false</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_17q5w35">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0unpjgf">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_109cxrg">
+        <description>not all approvals given</description>
+        <inputEntry id="UnaryTests_0cxlgjd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1dfo0kk">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lfmt2h">
+          <text>false</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1v00kxb">
+          <text>false</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0ch4n90">
+        <description>all approvals given</description>
+        <inputEntry id="UnaryTests_1pw025h">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1f0n6xo">
+          <text>true</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_11opby8">
+          <text>true</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0cobtt3">
+          <text>true</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="Decision_01d9fue">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>
