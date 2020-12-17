@@ -1,18 +1,8 @@
-<<<Groups:>>>
-
-Group ID: QP1
-Group Name: Qualified Persons 1
-
-Group ID: QP2
-Group Name: Qualified Persons 2
-
-Group ID: ML1
-Group Name: Migration Leads
-
-Group ID: TL1
-Group Name: Technical Leads
-
 <<<Users:>>>
+
+ADMIN:
+UserId: demo
+PW: demo
 
 User ID: uQP1
 First Name: Jane
@@ -33,3 +23,18 @@ User ID: uTL1
 First Name: Rusty
 Last Name: Pipes
 PW: demo
+
+
+<<<Groups:>>>
+
+Group ID: QP1
+Group Name: Qualified Persons 1
+
+Group ID: QP2
+Group Name: Qualified Persons 2
+
+Group ID: ML1
+Group Name: Migration Leads
+
+Group ID: TL1
+Group Name: Technical Leads
